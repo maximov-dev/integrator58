@@ -63,6 +63,11 @@ a {
     text-decoration: none;
 }
 
+.navbar__button:hover {
+    transform: scale(1.1);
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
 .navbar__phone {
     display: block;
     margin-bottom: 5px;
@@ -178,6 +183,17 @@ a {
     color: white;
 }
 
+.preview__button:hover {
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+    text-shadow: 1px 1px 2px #427388;
+}
+
+#submit-button:hover {
+    transform: scale(1.1);
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
 select.minimal {
     -moz-appearance:none;
     -webkit-appearance:none;
@@ -229,6 +245,11 @@ select.minimal {
     color: white;
     font-size: 17px;
     text-transform: uppercase;
+}
+
+.menu__link:hover {
+    transform: scale(1.1);
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 @media (max-width: 991px) {
@@ -442,6 +463,11 @@ input[type="checkbox"]:checked + label:before {
     margin-bottom: 100px;
 }
 
+.feature-block__item:hover {
+    transform: scale(1.3);
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
 @media (max-width: 991px) {
     .feature-block__item {
         flex-basis: 50%
@@ -462,9 +488,10 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .catalog-card {
+    max-height: 260px;
     max-width: 570px;
+    overflow: hidden;
     position: relative;
-    box-shadow: 7px 5px 21px rgba(0,0,0, 0.1)
 }
 
 .catalog__card {
@@ -477,6 +504,12 @@ input[type="checkbox"]:checked + label:before {
     text-align: center;
     height: 80px;
     width: 500px;
+}
+
+.catalog__link:hover {
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+    text-shadow: 1px 1px 2px #427388;
 }
 
 .button_lg {
@@ -501,6 +534,8 @@ input[type="checkbox"]:checked + label:before {
     flex-basis: 50%;
     font-size: 20px;
     margin-left: 70px;
+    text-align: justify;
+    text-indent: 20px;
 }
 
 .factory-block__text p {
@@ -512,6 +547,11 @@ input[type="checkbox"]:checked + label:before {
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 0 30px 80px 0;
+}
+
+.contacts-block__item:hover {
+    transform: scale(1.1);
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .contacts-block__item {
@@ -541,6 +581,11 @@ input[type="checkbox"]:checked + label:before {
 
 .questions__link {
     font-size: 24px;
+}
+
+.questions__link:hover {
+    transform: scale(1.3);
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .questions-block {
@@ -625,6 +670,7 @@ input[type="checkbox"]:checked + label:before {
 .md-stepper-horizontal .md-step:hover,
 .md-stepper-horizontal .md-step:active {
     background-color:rgba(0,0,0,0.04);
+    transition: all 1050ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 .md-stepper-horizontal .md-step:active {
     border-radius: 15% / 75%;
@@ -734,6 +780,8 @@ input[type="checkbox"]:checked + label:before {
 
     .catalog-card {
         max-width: 470px;
+        max-height: 260px;
+        overflow: hidden;
     }
 
     .catalog-block {
