@@ -221,6 +221,7 @@ select.minimal {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    font-weight: 700;
 }
 
 .menu__link {
@@ -510,15 +511,15 @@ input[type="checkbox"]:checked + label:before {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 80px;
+    margin: 0 30px 80px 0;
 }
 
 .contacts-block__item {
     text-align: center;
-    width: 50px;
 }
 
 .contacts__image {
+    width: 50px;
     margin-bottom: 25px;
 }
 

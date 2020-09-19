@@ -41,11 +41,7 @@
                 </div>
                 <div class="navbar__mobile">
                     <a class="navbar__phone" href="tel: +78412701112">+7 (8412) 7-01-112</a>
-                    <span class="navbar__worktime navbar__small-text">Без выходных</span>
-                </div>
-                <div class="navbar__landline">
-                    <a class="navbar__phone" href="tel: +78412701112">+7 (8412) 7-01-112</a>
-                    <a href="mailto: Integrator58@gmail.com " class="navbar__email navbar__small-text">Без выходных</a>
+                    <span class="navbar__worktime navbar__small-text">Выходные суббота, воскресенье</span>
                 </div>
                 <button class="button-o navbar__button ">Получить консультацию</button>
             </div>
@@ -69,50 +65,22 @@
             <div id="offer" class="offer-block">
                 <h2 class="offer__title">Оставьте заявку на услугу</h2>
                 <span class="offer__subtitle">
-                    получите скидку на 10%
+                    отправьте нам на почту вашу заявку
                 </span>
-                <form action="#" class="form offer__form">
-                    <div class="form__row">
+                    <form action="send.php" method="post" class="form__row">
                         <div class="form__group">
-                            <label for="" class="form__label">1</label>
-                            <select name="" class="input form__input minimal">
-                                <option value="1231">1123123</option>
-                            </select>
+                            <input type="text" class="form__input input" name="email" placeholder="Укажите e-mail" required pattern="^((([0-9A-Za-z]{1}[-0-9A-z\.]{1,}[0-9A-Za-z]{1})|([0-9А-Яа-я]{1}[-0-9А-я\.]{1,}[0-9А-Яа-я]{1}))@([-A-Za-z]{1,}\.){1,2}[-A-Za-z]{2,})$">
                         </div>
                         <div class="form__group">
-                            <label for="" class="form__label">2</label>
-                            <input type="text" class="input form__input">
+                            <input type="text" class="form__input input" name="fio" placeholder="Ваше имя" required>
                         </div>
                         <div class="form__group">
-                            <label for="" class="form__label">3</label>
-                            <input type="text" class="input form__input">
-                        </div>
-                    </div>
-                    <div class="form__row form__row-checkbox">
-                        <div class="form__checkbox">
-                            <input class="checkbox" type="checkbox" id="delivery">
-                            <label for="delivery" class="form__label checkbox-label">
-                                Монтаж1
-                            </label>
-                        </div>
-                        <div class="form__checkbox">
-                            <input class="checkbox" type="checkbox" id="delivery1">
-                            <label for="delivery1" class="form__label checkbox-label">
-                                Монтаж2
-                            </label>
-                        </div>
-                    </div>
-                    <div class="form__row">
-                        <div class="form__group">
-                            <input type="text" class="form__input input" placeholder="Ваше имя">
+                            <input type="tel" class="form__input input" name="telephone" placeholder="Ваш телефон" required>
                         </div>
                         <div class="form__group">
-                            <input type="tel" class="form__input input" placeholder="Ваш телефон">
+                            <input id="submit-button" type="submit" class="button form__button" value="Сделать заказ" required>
                         </div>
-                        <div class="form__group">
-                            <input type="submit" class="button form__button" value="Сделать заказ">
-                        </div>
-                    </div>
+                    </form>
                 </form>
             </div>
         </div>
@@ -171,7 +139,7 @@
                 <div class="md-stepper-horizontal orange">
                     <div class="md-step active">
                         <div class="md-step-circle"><span>1</span></div>
-                        <div class="md-step-title">Оставляете заявку</div>
+                        <div class="md-step-title">Звоните нам</div>
                         <div class="md-step-bar-left"></div>
                         <div class="md-step-bar-right"></div>
                     </div>
@@ -226,12 +194,16 @@
                     </div>
                     <div class="factory-block__text">
                         <p>
-                            Мы занимамся интеграцией систем безопасности на протяжении большого количества времени и
-                            имеем за плечами большой опыт в установке и монтаже систем от пожарной сигнализации
-                            до СКУД и систем умного дома.
-                            Мы являемся сертифицированными специалистами.
-                            Работаем с системами любой сложности, как в соответствии с имеющимся техническим заданием,
-                            так и по простому словесному описанию, руководствуясь пожеланиями клиента.
+                            Наша компания занимается интеграцией систем безопасности на протяжении большого количества
+                            времени и имеет за плечами большой опыт в монтаже и ремонте систем автоматической пожарной
+                            сигнализации, систем автоматического (водяного, порошкового, газового) пожаротушения,
+                            систем автоматизации противодымной защиты, систем оповещения и управления эвакуацией,
+                            систем охранной сигнализации, систем видеонаблюдения, систем контроля и управления доступом,
+                            систем экстренной связи для маломобильных групп населения и многое другое.
+                            Выполняем работы как на небольших объектах, так и на крупных комплексах.
+                            Мы являемся сертифицированными специалистами. Работаем с системами любой сложности,
+                            как в соответствии с имеющимся техническим заданием или проектом, так и по словесному описанию,
+                            руководствуясь пожеланиями клиента.
                         </p>
                     </div>
                 </div>
@@ -245,12 +217,12 @@
                 <div class="contacts-block__item">
                     <img src="./assets/icons/pin.svg" alt="" class="contacts__image">
                     <a href="#" class="contacts__link">
-                        adress
+                        Россия, Пенза, 2-й <br>Виноградный проезд, 11
                     </a>
                 </div>
                 <div class="contacts-block__item">
                     <img src="./assets/icons/phone.svg" alt="" class="contacts__image">
-                    <a href="#" class="contacts__link">+78887653321</a>
+                    <a href="tel: +78412701112" class="contacts__link">+7 (8412) 7-01-112</a>
                 </div>
                 <div class="contacts-block__item">
                     <img src="./assets/icons/mail.svg" alt="" class="contacts__image">
@@ -290,7 +262,7 @@
                 <img src="./assets/icons/pay-cards/mastercard-credit-card.png" alt="" class="footer__pay-logo">
             </div>
             <div class="footer__contacts">
-                <a href="#" class="footer__phone">+1231231231</a>
+                <a href="tel: +78412701112" class="footer__phone">+7 (8412) 7-01-112</a>
                 <a href="#" class="footer__mail">integrator58@gmail.com</a>
             </div>
         </div>
